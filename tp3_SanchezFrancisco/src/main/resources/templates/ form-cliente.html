@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<title>Formulario de Cliente</title>
+		<link rel="stylesheet" href="../static/css/estilos.css">
+	</head>
+	
+	<body>
+		<!-- Inicio del encabezado -->
+		<header id="encabezado">
+			<h1>Registro de Cliente</h1>
+		</header>
+		
+		<!-- Creacion del formulario -->
+		<form class="formulario" action="#" method="post">
+		 	<!-- Dato a ingresar: nombre -->
+		 	<label for="nombres">Nombres:</label>
+			<input type="text" id="nombres" name="nombres" required="required"><br>
+			
+			<!-- Dato a ingresar: apellidos -->
+			<label for="apellidos">Apellidos:</label>
+			<input type="text" id="apellidos" name="apellidos" required><br>
+		 	
+		 	<!-- Dato a ingresar: dni -->
+			<label for="dni">DNI:</label>
+			<input type="number" id="dni" name="dni" required><br>
+			
+			<!-- Dato a seleccionar: genero -->
+			<label for="genero">Genero:</label>
+			<input type="radio" id="genero1" name="genero" value="Femenino">Femenino
+			<input type="radio" id="genero2" name="genero" value="Masculino">Masculino
+			<input type="radio" id="genero3" name="genero" value="X">X<br>
+			
+			<!-- Dato a ingresar: fecha de nacimiento -->
+			<label for="fechaNacimiento">Fecha de Nacimiento:</label>
+			<input type="date" id="fechaNacimiento" name="fechaNacimiento" required><br>
+			
+			<!-- Dato a ingresar: correo electronico -->
+			<label for="correoElectronico">Correo Electronico:</label>
+			<input type="email" id="correoElectronico" name="correoElectronico" required><br>
+			
+			<!-- Dato a ingresar: domicilio -->
+			<label for="domicilio">Domicilio:</label>
+			<input type="text" id="apellidos" name="apellidos" required><br>
+			
+			<!-- Dato a ingresar: numero de telefono -->
+			<label for="numeroTelefono">Numero de telefono:</label>
+			<input type="number" id="numeroTelefono" name="numeroTelefono"><br>
+			
+			<!-- Dato a seleccionar: provincia -->
+			<label for="provincia">Provincia:</label>
+			<select id="provincia" name="provincia" required>
+				<option value="">Seleccione su provincia</option>
+				<option value="JUJUY">Jujuy</option>
+				<option value="SALTA">Salta</option>
+				<option value="TUCUMAN">Tucumán</option>
+				<option value="BUENOSAIRES">Buenos Aires</option>
+				<option value="CATAMARCA">Catamarca</option>
+				<option value="CHACO">Chaco</option>
+				<option value="CHUBUT">Chubut</option>
+				<option value="CORDOBA">Córdoba</option>
+				<option value="CORRIENTES">Corrientes</option>
+				<option value="ENTRERIOS">Entre Ríos</option>
+				<option value="FORMOSA">Formosa</option>
+				<option value="LAPAMPA">La Pampa</option>
+				<option value="LARIOJA">La Rioja</option>
+				<option value="MENDOZA">Mendoza</option>
+				<option value="MISIONES">Misiones</option>
+				<option value="NEUQUEN">Neuquén</option>
+				<option value="RIONEGRO">Rio Negro</option>
+				<option value="SANJUAN">San Juan</option>
+				<option value="SANLUIS">San Luis</option>
+				<option value="SANTACRUZ">Santa Cruz</option>
+				<option value="SANTAFE">Santa Fe</option>
+				<option value="SANTIAGODELESTERO">Santiago del Estero</option>
+				<option value="TIERRADELFUEGO">Tierra del Fuego</option>
+			</select><br>
+			
+			<!-- Dato a ingresar: contraseña -->
+			<label for="password">Password:</label>
+			<input type="password" id="password" name="password" required><br>
+			
+			<!-- Dato a seleccionar: categorias de interes -->>
+			<label>Categorías de interés:</label><br>
+			<input type="checkbox" id="interes1" name="interes1"></input>
+			<label for="interes1">Programador back end</label>
+			<input type="checkbox" id="interes2" name="interes2"></input>
+			<label for="interes2">Programador front end</label>
+			<input type="checkbox" id="interes3" name="interes3"></input>
+			<label for="interes3">Programador full stack</label>
+			<input type="checkbox" id="interes4" name="interes4"></input>
+			<label for="interes4">DevOps</label><br>
+			
+			<!-- Dato a seleccionar: sugerencia para la empresa -->
+			<label for="sugerencias">Sugerencias para la Empresa:</label><br>
+            <textarea id="sugerencias" name="sugerencias" rows="4" cols="50"></textarea><br><br>
+			
+			<!-- Dato a seleccionar: aceptar terminos y condiciones -->
+			<label for="aceptarCondiciones">Acepto los términos y condiciones</label>
+			<input type="checkbox" id="aceptarCondiciones" name="aceptarCondiciones" required><br>
+			
+			<!-- Dato a seleccionar: aceptar recibir informacion -->
+			<label for="aceptarRecibirInfo">Acepto recibir informacion relativa a la empresa</label>
+			<input type="checkbox" id="aceptarCondiciones" name="aceptarCondiciones"><br>
+			
+			<!-- Enviar los datos del formulario -->
+			<button type="submit">Enviar</button>
+	
+		</form>
+		
+		<!-- Pie de pagina -->
+		<footer id="pie-pagina">
+			<div>
+				<h4>Redes Sociales</h4>
+				<a class="enlace-redes" href="#">Youtube</a>
+            	<a class="enlace-redes" href="#">Twitter</a>
+            	<a class="enlace-redes" href="#">Instragram</a>
+            	<a class="enlace-redes" href="https://www.facebook.com/profile.php?id=100018011203083">Facebook</a>
+			</div>
+			<p>Correo: ignacio2162001@gmail.com</p>
+		</footer>
+	</body>
+</html>

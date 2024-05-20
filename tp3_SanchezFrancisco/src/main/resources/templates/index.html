@@ -3,36 +3,37 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Pagina</title>
+		<link rel="stylesheet" href="../static/css/estilos.css">
 	</head>
 	
 	<body>
-		<header>
+		<header id="encabezado">
 			<h1>Bienvenido a Programacion Visual</h1>
 		</header>
 		
 		<!-- Menu de navegacion -->
-		<nav>
+		<nav class="menu">
 			<ul>
-				<li><a href="https://www.fi.unju.edu.ar">Fi Unju</a></li>
-				<li><a href="https://virtual.unju.edu.ar/course/view.php?id=2540&section=5#tabs-tree-start">Aula Virtual de PV</a></li>
-				<li><a href="https://github.com/Francisco370/Trabajo_Practico_3.git">Mi repositorio</a></li>
+				<li><a class="enlace-encabezado" href="https://www.fi.unju.edu.ar">Fi Unju</a></li>
+				<li><a class="enlace-encabezado" href="https://virtual.unju.edu.ar/course/view.php?id=2540&section=5#tabs-tree-start">Aula Virtual de PV</a></li>
+				<li><a class="enlace-encabezado" href="https://github.com/Francisco370/Trabajo_Practico_3.git">Mi repositorio</a></li>
 			</ul>
 		</nav>
 		
 		<!-- Contenido principal -->
-		<main>
+		<main class="contenido-principal">
 		<!-- Secciones  -->
-			<section id="inicio">
-				<h2>Programacion Visual</h2>
-				<p>Materia de 2do año de la carrera Analista Programador Universitario.
+			<section class="seccion1">
+				<h2 class="titulo-seccion">Programacion Visual</h2>
+				<p class="parrafo-seccion">Materia de 2do año de la carrera Analista Programador Universitario.
 				Se experimenta con la creación de aplicación multicapa del tipo RIA 
 				(Rich Internet Application) utilizando frameworks de desarrollo usados en la industria del software 
 				ponderando la automatización de las técnicas de versionamiento, el trabajo en equipo y la investigación.
 				Se recomienda que los estudiantes posean un conocimiento previo de resolución de problemas 
 				con algoritmos y programación.
 				</p>
-				<h3>Docentes a Cargo</h3>
-				<ul>
+				<h3 class="subtitulo-seccion">Docentes a Cargo</h3>
+				<ul class="lista-seccion">
 					<li>Profesor Asociado: Ariel Alejandro Vega</li>
 					<li>Profesor Adjunto: Gustavo Sosa</li>
 					<li>Jefe de Trabajos Prácticos: Carolina Apaza</li>
@@ -40,14 +41,13 @@
 				</ul>
 			</section>
 			
-			<section id="seccion2">
-				<h2>Programa de la materia</h2>
-				<p>Plan de estudios</p>
-				<h3>Unidades</h3>
-				<ol>
+			<section class="seccion2">
+				<h2 class="titulo-seccion">Programa de la materia</h2>
+				<h3 class="subtitulo-seccion">Plan de estudios: Unidades</h3>
+				<ol class="lista-seccion">
 					<li>
 						Lenguaje Java
-						<p>
+						<p class="parrafo-seccion">
 						Tipos de datos primitivos y complejos. Estructuras de datos. Operadores. Uso de Strings, Arreglos y
 						Colecciones. Conceptos generales de la Programación Orientada a Objetos. Clases y objetos: Definición y
 						Ejemplos.
@@ -55,7 +55,7 @@
 					</li>
 					<li>
 						Introduccion a Spring Boot
-						<p>
+						<p class="parrafo-seccion">
 						Arquitectura de aplicaciones Web. Herramientas necesarias. ¿Qué es un Framework? Evolución de Spring.
 						Módulos disponibles. Arquitectura de una aplicación con Spring. Creación de proyectos con Spring Boot en
 						un IDE. Concepto de Controladores. Gestión de peticiones con RequestMapping. Introducción a HTML.
@@ -64,7 +64,7 @@
 					</li>
 					<li>
 						Gestión de Dependencias y Versionamiento
-						<p>
+						<p class="parrafo-seccion">
 						Gestión de Proyectos mediante un sistema de control de versionamiento. Git: tareas de versionamiento con
 						Git. Integración de Git con un IDE.
 						Maven: descripción y utilidad. Descripción de la estructura de un proyecto Maven. Gestión de dependencias,
@@ -73,7 +73,7 @@
 					</li>
 					<li>
 						Spring Boot MVC
-						<p>
+						<p class="parrafo-seccion">
 						Thymeleaf como motor de templates. Creación de un proyecto MVC con Spring Boot y thymeleaf.
 						Configuración de propiedades mediante el fichero properties o yml. Introducción a Bootstrap: concepto e
 						implementación de componentes. Navbar. Grillas con Bootstrap. Cards. Buttons. Breadscrumb. 
@@ -81,14 +81,14 @@
 					</li>
 					<li>
 						Clases de negocio
-						<p>
+						<p class="parrafo-seccion">
 						Creación de clases de negocio. Clases de Servicio. Concepto de Inyección de dependencias. Vinculación entre
 						clases de negocio con Servicios. Agregar objetos al modelo (Model). Renderizado de la UI con Thymeleaf. 
 						</p>
 					</li>
 					<li>
 						Persistencia de Objetos
-						<p>
+						<p class="parrafo-seccion">
 						Conceptos básicos de persistencia de objetos. Introducción a JPA. Conexión a un Motor de Base de Datos.
 						Configuración de JPA con Spring Boot. CrudRepository, JpaRepository, Query Methods, Relaciones. Sistema
 						de trazas: configuración con Spring Boot. 
@@ -96,7 +96,7 @@
 					</li>
 					<li>
 						Manejo de formularios
-						<p>
+						<p class="parrafo-seccion">
 						Gestión de eventos. Búsquedas. CRUD de clases de negocio. Operaciones de negocio. Uso de @Query para
 						consultas personalizadas. Integración con componentes Bootstrap y thymeleaf. Integración de conceptos en
 						una aplicación robusta.
@@ -105,8 +105,8 @@
 				</ol>
 				
 				<!-- Tabla de horarios comisiones -->
-				<h3>Horarios de la materia</h3>
-				<table >
+				<h3 class="subtitulo-seccion">Horarios de la materia</h3>
+				<table class="tabla-seccion">
 					<tr>
 				    	<th></th>
 				   	 	<th>Día</th>
@@ -140,28 +140,28 @@
 				</table>
 			</section>
 			
-			<section id="seccion3">
-				<h2>Herramientas a utilizar</h2>
-				<p>Instalar las siguientes herramientas en su computadora para utilizar
+			<section class="seccion3">
+				<h2 class="titulo-seccion">Herramientas a utilizar</h2>
+				<p class="parrafo-seccion">Instalar las siguientes herramientas en su computadora para utilizar
 				durante la cursada de la materia
 				</p>
-				<h3>Pasos a seguir</h3>
-				<ol>
+				<h3 class="subtitulo-seccion">Pasos a seguir</h3>
+				<ol class="lista-seccion">
 					<li>
 						Crear cuenta en GitHub:
-						<ul>
+						<ul class="enlace">
 							<li><a href="https://github.com/">Click para ir</a></li>
 						</ul>
 					</li>
 					<li>
-						Instalar Java 17 para Windows
-						<ul>
+						Instalar Java 17 para Windows:
+						<ul class="enlace">
 							<li><a href="https://www.oracle.com/ar/java/technologies/downloads/#java17">Click para ir</a></li>
 						</ul>
 					</li>
 					<li>
-						Descargar Spring Tool Suite para Eclipse
-						<ul>
+						Descargar Spring Tool Suite para Eclipse:
+						<ul class="enlace">
 							<li><a href="https://spring.io/tools">Click para ir</a></li>
 						</ul>
 					</li>
@@ -171,25 +171,25 @@
 		</main>
 		
 		<!-- Contenido adicional -->
-		<aside>
+		<aside class="contenido-adicional">
 			<h3>Facultad de Ingenieria</h3>
 			<p>Pagina de la Facultad de Ingenieria</p>
-			<img alt="imagen" src="../static/image/fi-logo.png">
-			<h3><a href="https://www.fi.unju.edu.ar/">Unju Virtual</a></h3>
+			<img class="imagen" alt="imagen" src="../static/image/fi-logo.png">
+			<h3><a class="enlace-adicional" href="https://www.fi.unju.edu.ar/">Unju Virtual</a></h3>
 			
 			<h3>Material de consulta</h3>
-			<h3><a href="https://docs.spring.io/spring-boot/docs/3.2.4/reference/pdf/spring-boot-reference.pdf">Bibliografia para la materia</a></h3>
+			<h3><a class="enlace-adicional" href="https://docs.spring.io/spring-boot/docs/3.2.4/reference/pdf/spring-boot-reference.pdf">Bibliografia para la materia</a></h3>
 			
 		</aside>
 		
 		<!-- Pie de pagina -->
-		<footer>
+		<footer id="pie-pagina">
 			<div>
 				<h4>Redes Sociales</h4>
-				<a href="#">Youtube</a>
-            	<a href="#">Twitter</a>
-            	<a href="#">Instragram</a>
-            	<a href="https://www.facebook.com/profile.php?id=100018011203083">Facebook</a>
+				<a class="enlace-redes" href="#">Youtube</a>
+            	<a class="enlace-redes" href="#">Twitter</a>
+            	<a class="enlace-redes" href="#">Instragram</a>
+            	<a class="enlace-redes" href="https://www.facebook.com/profile.php?id=100018011203083">Facebook</a>
 			</div>
 			<p>Correo: ignacio2162001@gmail.com</p>
 		</footer>
