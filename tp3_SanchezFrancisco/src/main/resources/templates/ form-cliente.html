@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Formulario de Cliente</title>
+		<link rel="stylesheet" href="../static/css/estilos.css">
 	</head>
 	
 	<body>
@@ -12,7 +13,7 @@
 		</header>
 		
 		<!-- Creacion del formulario -->
-		<form class="formulario"action="#" method="post">
+		<form class="formulario" action="#" method="post">
 		 	<!-- Dato a ingresar: nombre -->
 		 	<label for="nombres">Nombres:</label>
 			<input type="text" id="nombres" name="nombres" required="required"><br>
@@ -27,9 +28,9 @@
 			
 			<!-- Dato a seleccionar: genero -->
 			<label for="genero">Genero:</label>
-			<input type="radio" id="genero" name="genero" value="Femenino">Femenino
-			<input type="radio" id="genero" name="genero" value="Masculino">Masculino
-			<input type="radio" id="genero" name="genero" value="X">X<br>
+			<input type="radio" id="genero1" name="genero" value="Femenino">Femenino
+			<input type="radio" id="genero2" name="genero" value="Masculino">Masculino
+			<input type="radio" id="genero3" name="genero" value="X">X<br>
 			
 			<!-- Dato a ingresar: fecha de nacimiento -->
 			<label for="fechaNacimiento">Fecha de Nacimiento:</label>
@@ -109,15 +110,15 @@
 		</form>
 		
 		<!-- Pie de pagina -->
-		<footer id="pie_pagina">
-			<p>Correo: ignacio2162001@gmail.com</p>
+		<footer id="pie-pagina">
 			<div>
 				<h4>Redes Sociales</h4>
-				<a class="enlace" href="#">Youtube</a>
-            	<a class="enlace" href="#">Twitter</a>
-            	<a class="enlace" href="#">Instragram</a>
-            	<a class="enlace" href="https://www.facebook.com/profile.php?id=100018011203083">Facebook</a>
+				<a class="enlace-redes" href="#">Youtube</a>
+            	<a class="enlace-redes" href="#">Twitter</a>
+            	<a class="enlace-redes" href="#">Instragram</a>
+            	<a class="enlace-redes" href="https://www.facebook.com/profile.php?id=100018011203083">Facebook</a>
 			</div>
+			<p>Correo: ignacio2162001@gmail.com</p>
 		</footer>
 	</body>
 </html>
